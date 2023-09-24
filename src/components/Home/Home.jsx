@@ -3,10 +3,10 @@ import "./Home.css"
 import Sidebar from '../Sidebar/Sidebar';
 import Navbar from '../Navbar/Navbar';
 import Body from '../Body/Body';
-import Footer from '../Footer/Footer';
 import axios from "axios"
 import { useStateProvider } from '../../utils/StateProvider';
 import { reducerCases } from '../../utils/Constants';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   const [{ token }, dispatch] = useStateProvider();
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home_footer">
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );

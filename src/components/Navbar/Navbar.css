@@ -1,15 +1,15 @@
-.navbar_container{
-    display: flex;
+.navbar_container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  height: 5vh;
+  height: 5.1vh;
   position: sticky;
   top: 0;
   transition: 0.3s ease-in-out;
-  /* background-color: ${({ navBackground }) =>
-    navBackground ? "rgba(0,0,0,0.7)" : "none"}; */
-  
+  background: rgba(207, 219, 254, 0.58);
+  backdrop-filter: blur(7.3px);
+  z-index: 1;
 }
 .search_bar {
   background-color: white;
@@ -24,11 +24,10 @@
   border: none;
   height: 2rem;
   width: 100%;
-  
 }
 .search_bar input:focus {
-    outline: none;
-  }
+  outline: none;
+}
 .profile_pic {
   background-color: black;
   padding: 0.3rem 0.4rem;

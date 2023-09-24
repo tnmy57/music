@@ -1,0 +1,22 @@
+.currenttrack_container .track {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: 2rem;
+}
+
+.currenttrack_container .track .track_info .track_name {
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 480px) {
+  .currenttrack_container {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .currenttrack_container {
+    display: none;
+  }
+}

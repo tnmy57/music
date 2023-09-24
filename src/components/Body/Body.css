@@ -1,0 +1,73 @@
+.body_container .details {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  padding: 0;
+}
+.body_container .details .title {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.body_container .header-row {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
+  color: #000000;
+  position: sticky;
+  top: 15vh;
+  padding: 1rem 3rem;
+  transition: 0.3s ease-in-out;
+  background: rgba(207, 219, 254, 0.58);
+  backdrop-filter: blur(7.3px);
+}
+.tracks {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.row {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 0.3fr 3.1fr 2fr 0.1fr;
+}
+.row:hover {
+  background-color: rgba(243, 243, 243, 0.7);
+}
+.col {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  
+}
+.col img {
+  height: 40px;
+  width: 40px;
+}
+.detail {
+  display: flex;
+  gap: 1rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 480px) {
+  #artist {
+    display: none;
+  }
+    #duration {
+  display: none;
+}
+#number{
+  display: none;
+}
+#duration-icon{
+  display: none;
+}
+.tracks {
+  margin: 0 0rem;
+}
+}

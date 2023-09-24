@@ -1,0 +1,22 @@
+.controls_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+.controls_container svg {
+  color: #000000;
+  transition: 0.2s ease-in-out;
+}
+.controls_container svg:hover {
+  color: rgb(17, 17, 17);
+}
+.controls_container .state svg {
+    color: rgb(0, 0, 0);
+}
+.controls_container .previous,
+.controls_container .next,
+.controls_container .state {
+  font-size: 3rem;
+}

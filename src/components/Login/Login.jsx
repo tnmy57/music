@@ -4,7 +4,7 @@ import './Login.css';
 const Login = () => {
   const handleClick = () => {
     const clientId = 'b22b178cbfef44cca1dc727edca4c556';
-    const redirectUrl = 'http://localhost:3000/';
+    const redirectUrl = 'https://tnmy-music.netlify.app/';
     const apiUrl = 'https://accounts.spotify.com/authorize';
     const scope = [
       'user-read-private',
@@ -14,6 +14,7 @@ const Login = () => {
       'user-read-currently-playing',
       'user-read-recently-played',
       'user-top-read',
+      'playlist-read-private',
     ];
     window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scope.join(
       ' '
